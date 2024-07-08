@@ -1,0 +1,26 @@
+{
+  "name": "fcm-with-nodejs",
+  "version": "1.0.0",
+  "description": "Testing Firebase cloud messaging with nodejs",
+  "main": "index.js",
+  "scripts": {
+    "call": "nodemon callServer.js",
+    "firebase-services": "nodemon index.js"
+  },
+  "keywords": [
+    "firebase",
+    "nodejs"
+  ],
+  "author": "Alaa Eddine Boubekeur",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/speech": "^6.6.0",
+    "algoliasearch": "^4.8.6",
+    "cors": "^2.8.5",
+    "cross-fetch": "^3.1.4",
+    "express": "^4.17.1",
+    "firebase": "^10.12.2",
+    "firebase-admin": "^12.1.1",
+    "nodemon": "^3.1.3"
+  }
+}

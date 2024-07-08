@@ -1,0 +1,7 @@
+heroku:
+ stage: deploy
+ only:
+ - master
+ script:
+ - git remote add heroku https://heroku:$HEROKU_API_KEY@git.heroku.com/tokapp-backend.git
+ - git push heroku master

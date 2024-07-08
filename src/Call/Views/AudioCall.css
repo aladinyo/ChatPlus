@@ -1,0 +1,67 @@
+.audiocall {
+    position: absolute;
+    top: 7%;
+    left: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 450px;
+    height: 78px;
+    border-radius: 20px;
+    background-color: #0000004D;
+    z-index: 5;
+    padding: 0 15px;
+}
+
+.audiocall__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.audiocall__text {
+    margin-left: 10px;
+}
+
+.audiocall__info--name {
+    color: white;
+    font-weight: 700;
+}
+
+.audiocall__info--time {
+    color: #dadada;
+}
+
+.audiocall__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.audiocall__buttons>.redPhone {
+    margin-left: 10px;
+}
+
+@media (max-width: 760px) {
+    .audiocall {
+        width: 70%;
+        padding: 0 10px;
+        height: 55px;
+        border-radius: 15px;
+    }
+
+    .audiocall__text>p {
+        font-size: 11px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .audiocall__buttons {
+        transform: translateX(5px);
+    }
+
+    .audiocall__buttons>.redPhone {
+        margin-left: 0px;
+    }
+}

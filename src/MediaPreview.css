@@ -1,0 +1,128 @@
+.mediaPreview {
+	position: absolute;
+	top: 0px;
+	left: 0;
+	background-color: #00000026;
+	width: 100%;
+	height: calc(100% - 68px);
+	z-index: 4;
+	opacity: 0;
+	animation: opacity-in 300ms ease forwards;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.mediaPreview .close__arrow{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	cursor: pointer;
+}
+
+.mediaPreview .arrow {
+	position: absolute;
+	top: 50%;
+	transform: translateY(calc(-50% - 7px));
+	cursor: pointer;
+}
+
+.mediaPreview .left__arrow {
+	left: 5px;
+}
+
+.mediaPreview .right__arrow {
+	right: 5px;
+}
+
+.carousel {
+	overflow-x: hidden;
+	overflow-y: visible;
+	height: 80%;
+	width: 80%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(calc(-50% - 24px));
+}
+
+.inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+	transition: transform 250ms;
+}
+
+.carousel__item {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 5px;
+	position: relative;
+	/*background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;*/
+}
+
+.carousel__item img {
+	max-width: 100%;
+	max-height: calc(100% - 50px);
+	border-radius: 15px;
+}
+
+.media__details {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 33px;
+	padding: 0 10px;
+	margin-bottom: 17px;
+	background: white;
+	border-radius: 5px;
+}
+
+.media__details h3 {
+	font-size: 14px;
+	font-weight: 500;
+	padding-left: 8px;
+}
+
+@keyframes opacity-out {
+	from {
+		opacity: 1;
+	}
+
+	to {
+		opacity: 0;
+	}
+}
+
+@keyframes opacity-in {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes scale-in {
+	from {
+		transform: translateX(-50%) translateY(calc(-50% - 24px)) scale(0.8);
+	}
+
+	to {
+		transform: translateX(-50%) translateY(calc(-50% - 24px)) scale(1);
+	}
+}
+
+@media (min-width: 761px) {
+	.mediaPreview {
+		top: 0
+	}
+}

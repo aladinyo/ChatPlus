@@ -1,0 +1,114 @@
+.delete__user--container {
+    width: 40%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
+    border-radius: 20px;
+}
+
+.app .MuiBackdrop-root {
+    z-index: 6;
+}
+
+.delete__avatar--container {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.delete__avatar--container > .MuiAvatar-root {
+    width: 70px;
+    height: 70px;
+} 
+
+.warning__container {
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #cecececb;
+    width: 30px;
+    height:  30px;
+    border-radius: 15px;
+}
+
+.warning__container > svg {
+    color: #ff4c30;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.warning__container > svg > path {
+    transform: translateY(-1px) translateX(0.5px);
+}
+
+.delete__user--container h2 {
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.delete__user--container p {
+    text-align: center;
+    color: 	#8a8a8a;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 27px;
+    max-width: 80%;
+}
+
+.delete__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.delete__buttons > button {
+    text-transform: none;
+    padding: 8px 20px;
+    border-radius: 28px;
+    width: 250px;
+    font-size: 17px;
+}
+
+.delete__buttons > button:nth-child(1) {
+    background: #007FFF;
+    color: white;
+}
+
+.delete__buttons > button:nth-child(2) {
+    color: #ff4c30;
+    margin-top: 5px;
+}
+
+@media (max-width: 1100px) {
+    .delete__user--container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 760px) {
+    .delete__user--container h2 {
+        font-size: 20px;
+    }
+
+    .delete__user--container p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .delete__buttons {
+        width: 80%;
+    }
+
+    .delete__buttons > button {
+        font-size: 15px;
+        padding: 5px 0px;
+        border-radius: 28px;
+        width: 100%;
+    }
+}

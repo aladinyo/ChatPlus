@@ -1,0 +1,30 @@
+.btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.redPhone {
+    background-color: #FF3B30;
+    box-shadow: 3px 3px 20px #FF3B30B3;
+}
+
+.blurredBtn {
+    /*backdrop-filter: blur(10px) brightness(60%);*/
+    background-color: #00000081;
+}
+
+.greenCamera {
+    background-color: #2EC452;
+    box-shadow: 3px 3px 20px #2EC452B3;
+}
+
+@media (max-width: 1000px) {
+    .btn {
+        transform: scale(0.7);
+    }
+}

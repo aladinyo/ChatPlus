@@ -1,0 +1,78 @@
+.videocall {
+    position: absolute;
+    top: 7%;
+    left: 15%;
+    border-radius: 15px;
+    overflow: hidden;
+    z-index: 5;
+    box-shadow: 15px 15px 20px #00000069;
+    background-color: #36363699;
+}
+
+.videocall__large {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 3;
+}
+
+.videocall__small {
+    position: absolute;
+    object-fit: cover;
+    right: 12px;
+    bottom: 11px;
+    z-index: 5;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px #000000A6;
+}
+
+.videocall__top--section {
+    width: 100%;
+    padding: 0 12.5px;
+    top: 11px;
+    height: 40px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 4;
+}
+
+.videocall__bottom--section {
+    width: 152px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 11px;
+    z-index: 4;
+    left: 12px;
+}
+
+@media (max-width: 760px) {
+    .videocall {
+        top: 8%;
+        left: 7.5%;
+    }
+
+    .videocall__small {
+        bottom: 3px;
+        right: 3px;
+    }
+
+    .videocall__top--section {
+        padding: 0;
+        top: 0;
+    }
+
+    .videocall__bottom--section {
+        width: auto;
+        bottom: 0;
+        left: 0;
+    }
+}
