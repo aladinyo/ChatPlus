@@ -100,6 +100,22 @@ npm run build
 
 Your production code will be on "/build" folder
 
+## Set up Welcome Users & Admin Users
+
+You can set any user as a welcome user, welcome user will send welcoming messages to any new user signing up for the first time in your app, you can do that by grabing your user ID and setting him as a welcome user by calling this Test function, pass the user ID and a boolean to either make him a welcome user or not
+
+```javascript
+const test = new Test();
+test.updateWelcomeUser(userID, isWelcomeChat);
+```
+
+You can set any user as an admin user, admin users have the ability to delete any public room, they may delete public rooms that contain NSFW content or empty rooms, you can do that by grabing your user ID and setting him as an admin user by calling this Test function, pass the user ID and a boolean to either make him an admin user or not
+
+```javascript
+const test = new Test();
+test.updateAdminUser(userID, isAdmin);
+```
+
 ## Deploying your App
 
 In order to make your app available on the internet, you have to deploy the backend and frontend.
