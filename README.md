@@ -16,7 +16,7 @@ I would appreciate your support so much, leave us a star and share with your fri
 
 ## Web App Live Link
 
-Visit [ChatPlus (chatplus-a3d50.firebaseapp.com)](https://chatplus-a3d50.firebaseapp.com/) and login with your google account, you can install the app by clicking on the arrow down button at the top of the home page, don't forget to accept notifications, and you can search for my name "alaa eddine" and you will find two accounts, it's better to chat with me on the one with my profile picture, also you can call me as well 📹🎦📞🚀.
+Visit [ChatPlus (chatplus-a3d50.firebaseapp.com)](https://chatplus-a3d50.firebaseapp.com/) and login with your google account, you can install the app by clicking on the arrow down button at the top of the home page, don't forget to accept notifications 📹🎦📞🚀.
 
 Share it with your friends and have fun chatting with them🎈🎉😍
 
