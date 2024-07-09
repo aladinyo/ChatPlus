@@ -137,8 +137,8 @@ function Messages({ messages, clientWidth, page, seen, lastMessageRef, state, cl
                                         fontWeight: "bold"
                                     }} onClick={message.transcript !== "$state=loading" && message.transcript !== "" && collapse[message.id] ? collapseTranscript : null}
                                     className="transcript__collapse">
-                                        {message.transcript === "$state=loading" ? "Converting Speech" : message.transcript !== "" 
-                                        && collapse[message.id] ? "Show Transcript" : message.transcript !== "" && !collapse[message.id] ? "Transcripted" : "Speech not Recognized"}
+                                        {message.transcript === "$state=loading" &&  message.audioUrl !== "error" ? "Converting Speech" : message.transcript !== "" 
+                                        && collapse[message.id] ? "Show Transcript" : message.transcript !== "" && !collapse[message.id] && message.audioUrl !== "error" ? "Transcripted" : "Speech not Recognized"}
                                     </p>
                                 </>
                                 : null}
